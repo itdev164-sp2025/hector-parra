@@ -1,1 +1,3 @@
 # hector-para
+
+updated readme
