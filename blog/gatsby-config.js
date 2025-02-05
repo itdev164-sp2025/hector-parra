@@ -9,10 +9,15 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Hector's Blog for Class`,
+    description: ``,
+    author: `Hector Parra`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    contact: {
+      name: `Hector Parra`,
+      company: `Hector's Blog`,
+      address: `1234 Main Street`
+    }
   },
   plugins: [
     `gatsby-plugin-image`,
