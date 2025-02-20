@@ -8,6 +8,8 @@ const BlogPost = ({ data }) => {
     return (
         <Layout>
                 <h1>{title}</h1>
+                <div dangerouslySetInnerHTML={{ __html: data.contentfulBlogPost.body.childMarkdownRemark.html,}}>
+                </div>
         </Layout>
     );
 
@@ -19,6 +21,12 @@ export const pageQuery = graphql`
     query BlogPostQuery($slug: String!) {
         contentfulBlogPost(slug: { eq: $slug }) {
             title
+            slug
+            body {
+                childMarkdownRemark {
+                    html
+                }
+            }
         }
     }
 `;
