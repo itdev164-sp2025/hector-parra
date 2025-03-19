@@ -11,7 +11,7 @@ require ('dotenv').config({
  */
 module.exports = {
   siteMetadata: {
-    title: `Hector's Blog for Class`,
+    title: `Hector's Blog for Class, updated for Activity 5`,
     description: ``,
     author: `Hector Parra`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
