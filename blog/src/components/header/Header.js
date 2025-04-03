@@ -25,4 +25,4 @@ const Header = ({ siteTitle }) => (
   </StyledHeader>
 )
 
-export { Header }
+export { Header };
