@@ -1,3 +1,3 @@
-# hector-para
+# hector-parra
 
 updated readme
