@@ -1,7 +1,9 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
+import { Search } from "styled-icons/feather";
 import { H1 } from "../Heading";
+import { IconButton } from "../Button";
 import { Section } from "../Section";
 
 const StyledHeader = styled.header`
@@ -10,13 +12,14 @@ const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: ${props => props.theme.header.backgroundColor};
+  height: 50px;
+  background: ${({ theme }) => theme.variants.header.primary.backgroundColor};
 `
 
 const StyledLink = styled(Link)`
   font-size: var(--font-sm);
   text-decoration: none;
-  color: ${props => props.theme.header.color};
+  color: ${({ theme }) => theme.variants.header.primary.color};
 `
 
 const Header = ({ siteTitle }) => (
@@ -29,7 +32,7 @@ const Header = ({ siteTitle }) => (
     </StyledLink>
     </Section>
     <Section width={1/12}>
-      Search
+      <IconButton icon={<Search />} variant='contrast' />
     </Section>
   </StyledHeader>
 )
